@@ -8,5 +8,14 @@
 ++ Incremento
 -- Decremento
 % Resto da divisão
-// parei em 16 min da aula
+
+parseInt
+parseFloat
+Number
+
 */
+
+const num1 = 10;
+const num2 = parseFloat('50.7');
+multi=num1 * num2;
+console.log(multi);

@@ -1,5 +1,5 @@
-const nome = 'Bernardo Gomes';
-const sobrenome = 'Pereira';
+const nome = 'Bernardo';
+const sobrenome = 'Gomes Pereira';
 const altura = 1.85;
 let idade = 19;
 let peso = 85;

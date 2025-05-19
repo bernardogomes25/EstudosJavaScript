@@ -1,9 +1,25 @@
+/*
+addTarefa("Estudar JS", "Praticar arrays e objetos");
+addTarefa("Ler livro", "Capítulo 3 do livro de algoritmos");
+
+listarTarefas();
+
+marcarComoConcluida(1);
+
+filtrarPorStatus("concluída");
+
+removerTarefa(2);
+
+listarTarefas();
+
+*/
+
 let tarefas = [];
-let proxId = 1;
+let proxId=0;
 
 function addTarefa (titulo, desc){
     const novaTarefa = {
-        id: proxId++, 
+        id: proxId++,
         titulo, 
         desc, 
         status: 'pendente',
@@ -19,5 +35,7 @@ function listarTarefas(){
     console.log(tarefas)
 }
 
-addTarefa('Comprar Pão', 'Vou fazer um misto quente amanhã!');
+addTarefa("Estudar JS", "Praticar arrays e objetos");
+addTarefa("Ler livro", "Capítulo 3 do livro de algoritmos");
+
 listarTarefas();

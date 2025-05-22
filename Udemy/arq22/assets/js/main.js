@@ -1,12 +1,10 @@
-const dataTxt = document.querySelector('.data');
+const dataTxt = document.querySelector('h1');
 
 let data = new Date();
 let semana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
 let anoInteiro = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
-const p = document.createElement('p');
-p.innerHTML += dataFormatter(data);
-dataTxt.appendChild(p);
+dataTxt.innerHTML = dataFormatter(data);
 
 function dataFormatter(data) {
 

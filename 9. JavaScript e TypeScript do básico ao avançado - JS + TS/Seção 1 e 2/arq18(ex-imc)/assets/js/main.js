@@ -21,7 +21,7 @@ form.addEventListener('submit', function (e) {
     const imc = getImc(peso, altura);
     const nivelImc = getNivelImc(imc);
 
-    const msg = `Seu IMC é ${imc}, (${nivelImc})`;
+    const msg = `Seu IMC é ${imc.toFixed(2)}, (${nivelImc})`;
 
     calcResultado(msg, true);
 
@@ -52,7 +52,7 @@ function getNivelImc(imc) {
 
 function getImc(peso, altura) {
     const resultado = peso / altura ** 2;
-    return resultado.toFixed(2);
+    return resultado;
 }
 
 function criaP() {
